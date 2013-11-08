@@ -2,6 +2,26 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+#thebatpod {
+	z-index: 2000;
+	position: absolute;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+#bane
+{
+	padding-top: 177px;
+}
+
+#the-bay .modal-dialog {
+	padding-top: 167px;
+}
+
+#content {
+	padding: 20px;
+}
+
 .container {
 	max-width: 960px;
 }
@@ -13,6 +33,8 @@ body {
 .navbar {
 	margin-bottom: 0px;
 	border-radius: 0px;
+
+	background-color: #f9f9f9;
 }
 
 #super-nav {
@@ -25,6 +47,7 @@ body {
 	border-radius: 0px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
+	border: 0px;
 }
 #super-nav .btn:hover{
 	  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);

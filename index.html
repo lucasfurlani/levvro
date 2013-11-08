@@ -22,28 +22,97 @@
 </head>
 
 <body>
-    <div class="navbar navbar-default">
-        <div class="container">
-            <div class="input-group navbar-form" id="super-search">
-                <input class="form-control" type="text"> <span class=
-                "input-group-btn"><button class="btn btn-default" type=
-                "button"><span class=
-                "input-group-btn"> <span class="glyphicon glyphicon-search"></span></button></span>
+    <div id="thebatpod"><div class="navbar navbar-default">
+            <div class="container">
+                <div class="input-group navbar-form" id="super-search">
+                    <input class="form-control" type="text"> <span class=
+                    "input-group-btn"><button class="btn btn-default" type=
+                    "button"><span class=
+                    "input-group-btn"> <span class="glyphicon glyphicon-search"></span></button></span>
+                </div>
             </div>
+        </div>
+    
+        <div class="container cloud-9">
+            <div class="btn-group btn-group-lg btn-group-justified" id="super-nav">
+                <a class="btn btn-default post-btn" data-toggle="modal" data-target="#post-modal" type="button"><span class=
+                "glyphicon glyphicon-saved"></span><br>
+                Post</a> 
+                <a class="btn btn-default buy-btn" data-toggle="modal" data-target="#buy-modal" type=
+                "button"><span class="glyphicon glyphicon-book"></span><br>
+                Buy / Find</a>
+                <a class="btn btn-default faculty-btn" data-toggle="modal" data-target="#bbf-modal" type=
+                "button"><span class="glyphicon glyphicon-list"></span><br>
+                Browse By Faculty</a>
+            </div><span class="shadow"></span>
         </div>
     </div>
 
-    <div class="container">
-        <div class="btn-group btn-group-lg btn-group-justified" id="super-nav">
-            <a class="btn btn-default post-btn" type="button"><span class=
-            "glyphicon glyphicon-saved"></span><br>
-            Post</a> <a class="btn btn-default buy-btn" type=
-            "button"><span class="glyphicon glyphicon-book"></span><br>
-            Buy / Find</a> <a class="btn btn-default faculty-btn" type=
-            "button"><span class="glyphicon glyphicon-list"></span><br>
-            Browse By Faculty</a>
-        </div><span class="shadow"></span>
-    </div><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <div id="bane">
+        <div id="content" class="container">
+                <p>Welcome, {{ user }}! </p>
+                <p>
+
+                </p>
+        </div>
+
+        <div id="the-bay">
+            <!-- Post Modal -->
+            <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Post a Book</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <!-- Buy Modal -->
+            <div class="modal fade" id="buy-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Courses of the books you're looking for</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <!-- BBF Modal -->
+            <div class="modal fade" id="bbf-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Select Facutly</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
      <script src="res/js/bootstrap.min.js"></script>
