@@ -61,3 +61,7 @@ body {
 	background: url(../i/shadow.png) no-repeat top center;
 	width: 100%;
 }
+
+.form-horizontal .control-label {
+	text-align: left;
+}

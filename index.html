@@ -62,39 +62,35 @@
                     <h4 class="modal-title" id="myModalLabel">Post a Book</h4>
                   </div>
                   <div class="modal-body">
-                    <div class="input-group">
+                    <form class="form-horizontal" role="form">
+                    <div class="">
                         <!-- Text input-->
-                        <div class="control-group">
-                          <label class="control-label" for="booktitle">Book Title</label>
-                          <div class="controls">
-                            <input id="booktitle" name="booktitle" type="text" placeholder="" class="input-xlarge" required="">
-                            
+                        <div class="form-group">
+                          <label for="booktitle" class="col-md-3 control-label">Book Title</label>
+                          <div class="col-md-9"><input id="booktitle" type="text" class="form-control"></div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="coursename">Course Name</label>
+                          <div class="col-md-9">
+                            <input id="coursename" type="text" class="form-control">
                           </div>
                         </div>
 
                         <!-- Text input-->
-                        <div class="control-group">
-                          <label class="control-label" for="coursename">Course Name</label>
-                          <div class="controls">
-                            <input id="coursename" name="coursename" type="text" placeholder="" class="input-xlarge" required="">
-                            
-                          </div>
-                        </div>
-
-                        <!-- Text input-->
-                        <div class="control-group">
-                          <label class="control-label" for="author">Author</label>
-                          <div class="controls">
-                            <input id="author" name="author" type="text" placeholder="" class="input-xlarge" required="">
-                            
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="author">Author</label>
+                          <div class="col-md-9">
+                            <input id="author" type="text" class="form-control">
                           </div>
                         </div>
 
                         <!-- Select Basic -->
-                        <div class="control-group">
-                          <label class="control-label" for="edition">Edition</label>
-                          <div class="controls">
-                            <select id="edition" name="edition" class="input-xlarge">
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="edition">Edition</label>
+                          <div class="col-md-9">
+                            <select id="edition" style="width:100%">
                               <option>1st</option>
                               <option>2nd</option>
                               <option>3rd</option>
@@ -110,10 +106,10 @@
                         </div>
 
                         <!-- Select Basic -->
-                        <div class="control-group">
-                          <label class="control-label" for="condition">Condition</label>
-                          <div class="controls">
-                            <select id="condition" name="condition" class="input-xlarge">
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="condition">Condition</label>
+                          <div class="col-md-9">
+                            <select id="condition" style="width:100%">
                               <option>Brand New</option>
                               <option>Barely Used</option>
                               <option>Worn</option>
@@ -122,17 +118,18 @@
                         </div>
 
                         <!-- Prepended text-->
-                        <div class="control-group">
-                          <label class="control-label" for="price">Price</label>
-                          <div class="controls">
-                            <div class="input-prepend">
-                              <span class="add-on">$</span>
-                              <input id="price" name="price" class="input-xlarge" placeholder="" type="text" required="">
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="price">Price</label>
+                          <div class="col-md-9">
+                            <div class="input-group">
+                              <span class="input-group-addon">$</span>
+                              <input id="price" class="form-control">
                             </div>
                             
                           </div>
                         </div>
                     </div>
+                </form>
 
                   </div>
                   <div class="modal-footer">

@@ -1,5 +1,9 @@
 $( document ).ready(function() {
-    $("#select-faculty").select2({
+    $("#edition").select2({
+    	placeholder: "Select a Faculty",
+    });
+
+    $("#condition").select2({
     	placeholder: "Select a Faculty",
     });
 });
