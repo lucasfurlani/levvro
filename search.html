@@ -35,7 +35,7 @@
         </div>
     
         <div class="container">
-            <div class="btn-group btn-group-lg btn-group-justified" id="super-nav">
+            <div class="btn-group btn-group-lg btn-group-justified nav-buttons" id="super-nav">
                 <a class="btn btn-default post-btn" data-toggle="modal" data-target="#post-modal" type="button"><span class=
                 "glyphicon glyphicon-saved"></span><br>
                 Post</a> 
@@ -93,11 +93,80 @@
                     <h4 class="modal-title" id="myModalLabel">Post a Book</h4>
                   </div>
                   <div class="modal-body">
-                    ...
+                    <form class="form-horizontal" role="form">
+                    <div class="">
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label for="booktitle" class="col-md-3 control-label">Book Title</label>
+                          <div class="col-md-9"><input id="booktitle" type="text" class="form-control"></div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="coursename">Course Name</label>
+                          <div class="col-md-9">
+                            <input id="coursename" type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="author">Author</label>
+                          <div class="col-md-9">
+                            <input id="author" type="text" class="form-control">
+                          </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="edition">Edition</label>
+                          <div class="col-md-9">
+                            <select id="edition" style="width:100%">
+                              <option>1st</option>
+                              <option>2nd</option>
+                              <option>3rd</option>
+                              <option>4th</option>
+                              <option>5th</option>
+                              <option>6th</option>
+                              <option>7th</option>
+                              <option>8th</option>
+                              <option>9th</option>
+                              <option>10th</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="condition">Condition</label>
+                          <div class="col-md-9">
+                            <select id="condition" style="width:100%">
+                              <option>Brand New</option>
+                              <option>Barely Used</option>
+                              <option>Worn</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Prepended text-->
+                        <div class="form-group">
+                          <label class="col-md-3 control-label" for="price">Price</label>
+                          <div class="col-md-9">
+                            <div class="input-group">
+                              <span class="input-group-addon">$</span>
+                              <input id="price" class="form-control">
+                              <span class="input-group-addon">.00</span>
+                            </div>
+                            
+                          </div>
+                        </div>
+                    </div>
+                </form>
+
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" data-toggle="modal" data-target="#post-success-modal" class="btn btn-primary">Submit</button>
                   </div>
                 </div><!-- /.modal-content -->
               </div><!-- /.modal-dialog -->
@@ -108,43 +177,21 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Courses of the books you're looking for</h4>
+                    <h4 class="modal-title" id="myModalLabel">Pick your choice</h4>
                   </div>
-                  <div class="modal-body">
-                    Here we have to show 2 options for the user, like:
-                    <br>|Browser by Course| or |Browser by Faculty|
+                  <div class="modal-body modal-nav">
+                    <div class="btn-group btn-group-lg btn-group-justified nav-buttons">
+                      <a type="button" class="btn btn-default"><span class="glyphicon glyphicon-th-large"></span><br>Find by Course</a>
+                      <a type="button" class="btn btn-default"><span class="glyphicon glyphicon-list"></span><br>Browse by Faculty</a>
+                    </div>
                   </div>
-                  <div class="modal-footer">
+                  <div class="modal-footer modal-nav-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
                   </div>
                 </div><!-- /.modal-content -->
               </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
 
-            <!-- BBF Modal -->
-            <div class="modal fade" id="bbf-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Select Faculty</h4>
-                  </div>
-                  <div class="modal-body">
-                    <select id="select-faculty" style="width:300px">
-                        <option value="BA">Business Administration</option>
-                        <option value="CS">Computer Science</option>
-                        <option value="MA">Math and Statistics</option>
-                        <option value="BI">Biology</option>
-                        <option value="CH">Chemistry</option>
-                    </select>                  
-                </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
-                  </div>
-                </div><!-- /.modal-content -->
-              </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
         </div>
     </div> 
 
