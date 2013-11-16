@@ -6,4 +6,8 @@ $( document ).ready(function() {
     $("#condition").select2({
     	placeholder: "Select a Faculty",
     });
+
+    $("#select-faculty").select2({
+    	placeholder: "Select a Faculty",
+    });
 });

@@ -135,7 +135,7 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" data-toggle="modal" data-target="#post-success-modal" class="btn btn-primary">Submit</button>
+                    <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#post-success-modal" class="btn btn-primary">Submit</button>
                   </div>
                 </div><!-- /.modal-content -->
               </div><!-- /.modal-dialog -->
@@ -150,12 +150,30 @@
                   </div>
                   <div class="modal-body modal-nav">
                     <div class="btn-group btn-group-lg btn-group-justified nav-buttons">
-                      <a type="button" class="btn btn-default"><span class="glyphicon glyphicon-th-large"></span><br>Find by Course</a>
-                      <a type="button" class="btn btn-default"><span class="glyphicon glyphicon-list"></span><br>Browse by Faculty</a>
+                      <a type="button" class="btn btn-default" data-toggle="modal" data-dismiss="modal" data-target="#add-course-modal"><span class="glyphicon glyphicon-th-large"></span><br>Find by Course</a>
+                      <a type="button" class="btn btn-default" data-toggle="modal" data-dismiss="modal" data-target="#bbf-modal"><span class="glyphicon glyphicon-list"></span><br>Browse by Faculty</a>
                     </div>
                   </div>
                   <div class="modal-footer modal-nav-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <!-- Add Course Modal -->
+            <div class="modal fade" id="add-course-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Add Courses to Find Books</h4>
+                  </div>
+                  <div class="modal-body">
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" data-dismiss="modal" class="btn btn-primary">Submit</button>
                   </div>
                 </div><!-- /.modal-content -->
               </div><!-- /.modal-dialog -->
