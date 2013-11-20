@@ -11,3 +11,8 @@ $( document ).ready(function() {
     	placeholder: "Select a Faculty",
     });
 });
+
+$('.listing-collapse').click(function(){
+	$(this).nextUntil('tr.listing-collapse').slideToggle(0);
+	$(this).toggleClass("warning");
+});

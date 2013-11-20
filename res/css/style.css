@@ -62,6 +62,14 @@ body {
 	margin-top: 0px;
 }
 
+.listing-info {
+	display: none;
+}
+
+tr.listing-info.warning td {
+	border-top: none;
+}
+
 .shadow{
 	position: absolute;
 	height: 7px;
@@ -72,4 +80,9 @@ body {
 
 .form-horizontal .control-label {
 	text-align: left;
+}
+
+tr.listing-collapse
+{
+    cursor:pointer;
 }
