@@ -78,6 +78,11 @@ tr.listing-info.warning td {
 	width: 100%;
 }
 
+#add-course-dis,
+#click-to-add {
+	cursor: pointer;
+}
+
 .form-horizontal .control-label {
 	text-align: left;
 }
