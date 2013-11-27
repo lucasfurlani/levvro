@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Introduction to Business",
+    "description": "",
+    "prof": "",
+    "courseid": "BUS101",
+    "tokens": [
+      "business",
+      "101 course"
+    ]
+  },
+  {
+    "name": "Introduction to Management Science",
+    "description": "",
+    "prof": "",
+    "courseid": "BUS251",
+    "tokens": [
+      "business",
+      "200 course"
+    ]
+  },
+  {
+    "name": "Introduction to Computer Science",
+    "description": "",
+    "prof": "",
+    "courseid": "CSC151",
+    "tokens": [
+      "computer science",
+      "101 course"
+    ]
+  }
+]
