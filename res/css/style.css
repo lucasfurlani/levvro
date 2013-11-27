@@ -156,3 +156,7 @@ transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 .courses-typehead {
 	width: 100%;
 }
+
+.courses-typehead {
+	width: 195%;
+}
